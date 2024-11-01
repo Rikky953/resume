@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - UX Designer Resume</title>
+    <link rel="stylesheet" href="modern.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: grey;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container Layout with Grid */
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+        "header header"
+        "sidebar main";
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section with Flexbox */
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    background-color: navy;
+    padding: 20px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    padding: 0px;
+}
+
+.header-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-text p {
+    font-size: 18px;
+    color: grey;
+}
+
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.skill-item {
+    background-color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+
+.main {
+    grid-area: main;
+}
+
+.main h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid blanchedalmond;
+    padding-bottom: 5px;
+}
+
+.job {
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-weight: bold;
+}
+
+.job-date {
+    font-style: italic;
+    color: grey;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.projects p {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar";
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+      
+        <header class="header">
+            <img src="download.png" alt="Profile Picture" class="profile-picture">
+            <div class="header-text">
+                <h1>Alex Johnson</h1>
+                <p>UX Designer</p>
+            </div>
+        </header>
+
+       
+        <aside class="sidebar">
+            <section class="contact-info">
+                <h2>Contact</h2>
+                <p>Email: rikkypattela@gmail.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Location: Phoenix, AZ</p>
+            </section>
+            
+            <section class="skills">
+                <h2>Skills</h2>
+                <div class="skill-item">User Research</div>
+                <div class="skill-item">Wireframing</div>
+                <div class="skill-item">Prototyping</div>
+                <div class="skill-item">UI Design</div>
+                <div class="skill-item">Adobe XD</div>
+                <div class="skill-item">Figma</div>
+            </section>
+
+            <section class="languages">
+                <h2>Languages</h2>
+                <p>English (Fluent)</p>
+                <p>Telegu (Conversational)</p>
+            </section>
+        </aside>
+
+       
+        <main class="main">
+            <section class="summary">
+                <h2>Summary</h2>
+                <p>Experienced UX Designer with a passion for improving user experience through innovative and efficient designs. Skilled in prototyping, wireframing, and conducting user research to deliver solutions that exceed client expectations.</p>
+            </section>
+
+            <section class="experience">
+                <h2>Work Experience</h2>
+                <div class="job">
+                    <p class="job-title">Lead UX Designer - ABC Corp</p>
+                    <p class="job-date">March 2020 - Present</p>
+                    <ul>
+                        <li>Led the redesign of a mobile app, improving user retention by 15%.</li>
+                        <li>Conducted user testing and implemented feedback to enhance usability.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam magni asperiores molestias voluptatum maxime neque, porro pariatur nemo magnam laudantium exercitationem iste labore quisquam dignissimos voluptatem sit sint repellendus consectetur!</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <p class="job-title">UX Designer - XYZ Studio</p>
+                    <p class="job-date">June 2017 - February 2020</p>
+                    <ul>
+                        <li>Designed wireframes and prototypes for client projects using Figma and Adobe XD.</li>
+                        <li>Conducted user interviews and research to inform design decisions.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <p>Bachelor of Fine Arts in Interaction Design</p>
+                <p>University of California, 2017</p>
+            </section>
+
+            <section class="projects">
+                <h2>Projects</h2>
+                <p>Redesigned the XYZ Website, improving accessibility and usability scores by 25%.</p>
+                <p>Developed a design system for a SaaS product, improving design consistency across teams.</p>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

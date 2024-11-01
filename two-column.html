@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="two-column.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; 
+            padding: 20px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr; 
+            max-width: 800px;
+            margin: auto;
+            background-color: rgb(203, 208, 220);
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: auto;
+        }
+        img {
+            border-radius: 20px;
+            max-width: 100px;
+            margin-bottom: 10px;
+            box-shadow: 10px;
+        }
+        .left-column {
+            background-color: rgb(45, 93, 249); 
+            padding: 20px;
+            border-right: 2px solid white;
+            text-align: center;
+            color: white;
+        }
+        .right-column {
+            padding: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+        h3 {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: rgb(45, 93, 249);
+        }
+        p, ul {
+            margin-bottom: 10px;
+        }
+        .skills ul {
+            list-style-type: none; 
+            padding-left: 10px; 
+        }
+        .skills ul li {
+            margin-bottom: 5px;
+        }
+        .section {
+            border-top: 1px solid rgb(203, 208, 220);
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="left-column">
+            <img src="download.jfif" alt="Profile Picture">
+            <h2>Rikky Pattela</h2>
+            <p>Email: rikkypattela@gmail.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Location: Your City, Country</p>
+        </div>
+
+        <div class="right-column">
+            <!-- Experience Section -->
+            <div class="experience section">
+                <h3>Experience</h3>
+                <p><strong>Hawk Studios</strong> <br>
+                Hawk Specialist <br>
+                Provided expertise in hawk care and management, supporting conservation and awareness programs. Worked hands-on with hawks to ensure their well-being and fostered public appreciation for avian species.</p>
+                
+                <p><strong>Toys R Us</strong> <br>
+                Sales Associate <br>
+                Engaged with customers to provide exceptional service, specializing in toy sales. Excelled in product knowledge, merchandising, and created a welcoming experience for families and children.</p>
+            </div>
+
+            <!-- Education Section -->
+            <div class="education section">
+                <h3>Education</h3>
+                <p><strong>Harvard University</strong> <br>
+                Doctor of Medicine</p>
+                
+                <p><strong>Stanford University</strong> <br>
+                Master of Business Administration (MBA)</p>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills section">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Fluent in multiple languages: English, Spanish, French, and Mandarin.</li>
+                    <li>Specialist in hawk conservation and avian rehabilitation.</li>
+                    <li>Exceptional interpersonal skills, dedicated to assisting and mentoring team members.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
